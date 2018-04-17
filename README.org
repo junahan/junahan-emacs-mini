@@ -1,0 +1,53 @@
+#+TITLE: Junhan Emacs Mini
+#+AUTHOR: Junahan
+#+EMAIL: junahan@outlook
+#+DATE: 20180416
+#+LICENSE: CC BY 4.0
+
+* 摘要
+这是一个 Mini 版本的配置，主要目的是在 Windows Cygwin 环境下使用 ORG-MODE, Helm, git 等模块，以写作为目的。完整的以开发环境为目的配置，请参阅项目[[https://github.com/junahan/junahan-emacs][Junahan Emacs 配置]]。
+
+/特别提醒，本 Emacs 配置仅在如下环境进行过测试:/
+#+BEGIN_QUOTE
+ OS:Win 7 / Win 10 + cygwin
+ Emacs: Win32-Emacs 25.3.1
+#+END_QUOTE
+
+* 支持特性 #+<<features>>
+1. init.el - 位于 =.emacs.d= 目录下的 Emacs 配置文件入口，在这里加载 =lisp= 目录下的配置子模块。
+2. init-utils.el - 一些用于配置文件的工具函数定义。
+3. init-elpa.el - 用于配置 melpa 仓库镜像站点以及定义用于安装依赖包的函数。
+4. init-common.el - 通用配置。例如 Speedbar, Projectile, Yasnippet 等。
+5. init-git.el - 使用 Magit 作为 Git Emacs 前端。
+6. init-ivy-swiper.el - 使用 Swiper 增强 isearch 搜索功能。
+7. init-helm.el - 使用 Helm 作为增量补全和缩减选择的工具，并使用 Helm Projectile 管理项目。
+8. init-org.el - 配置 Org 模块。
+9. init-keyset.el - 配置通用快捷键。
+
+* 快速启用 #+<<quick-guide>>
+** Cygwin 环境
+本配置仅在 Cygwin 环境测试过，请确保 Cygwin 已经正常安装，并确保已经安装了 git 工具。
+
+** Clone junanhan-emacs-mini.git 项目
+运行如下命令从 Github Clone junahan-emacs-mini.git 项目：
+#+BEGIN_SRC 
+# Clone 项目
+git clone https://github.com/junahan/junahan-emacs-mini.git
+#+END_SRC
+
+** 部署
+- 开始之前，备份你的 =～/.emacs.d= 目录以确保你能够回去你以前的配置。
+- 复制项目中 =emacs.d= 目录下的内容之 ～/.eamcs.d 目录。 
+- 启动 Emacs - 配置脚本会自动安装所需要的依赖包，第一次启动需要一些时间下载和安装依赖包。
+
+更多，更完整版本 Emacs 模块的详细介绍，请参阅[[https://github.com/junahan/junahan-emacs][Junahan Emacs 配置说明]]。
+
+* 参考文献 #+<<references>>
+1. GNU Emacs, https://www.gnu.org/software/emacs/.
+2. Moving Control Key, https://www.emacswiki.org/emacs/MovingTheCtrlKey.
+3. Junahan Emacs 配置, https://github.com/junahan/junahan-emacs.
+4. Helm Github - https://github.com/emacs-helm/helm.
+
+#+BEGIN_QUOTE
+本作品采用[[http://creativecommons.org/licenses/by/4.0/][知识共享署名 4.0 国际许可协议]]进行许可。
+#+END_QUOTE
