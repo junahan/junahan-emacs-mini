@@ -5,13 +5,13 @@
 #+LICENSE: CC BY 4.0
 
 * 摘要
-这是一个 Mini 版本的配置，主要目的是在 Windows Cygwin 环境下使用 ORG-MODE, Helm, git 等模块，以写作为目的。完整的以开发环境为目的配置，请参阅项目 [[https://github.com/junahan/junahan-emacs][Junahan Emacs 配置]]。
+这是一个 Mini 版本的配置，主要目的是在 Windows Cygwin 以及 android 环境下使用 ORG-MODE, Helm, git 等模块，以写作为目的。完整的以开发环境为目的配置，请参阅项目 [[https://github.com/junahan/junahan-emacs][Junahan Emacs 配置]]。
 
 /特别提醒，本 Emacs 配置仅在如下环境进行过测试:/
 #+BEGIN_QUOTE
- OS: Win 7 / Win 10 + cygwin 2.5
+ OS: Win 7 / Win 10 + cygwin 2.5 / Emacs: Win32-Emacs 25.3
 
- Emacs: Win32-Emacs 25.3.1
+ OS: Android kernel 4.1.18 / Termux  / Emacs 25.3
 #+END_QUOTE
 
 * 支持特性

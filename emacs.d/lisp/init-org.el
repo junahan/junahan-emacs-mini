@@ -13,7 +13,7 @@
   (require-package 'grab-mac-link))
 
 (require-package 'org-cliplink)
-(require-package 'image+)
+;; (require-package 'image+)
 
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
@@ -51,9 +51,9 @@
         ))
 
 ;; for image-model
-(eval-after-load 'image '(require 'image+))
+;; (eval-after-load 'image '(require 'image+))
 ;; auto adjust the image to fit the frame.
-(eval-after-load 'image+ '(imagex-auto-adjust-mode 1))
+;; (eval-after-load 'image+ '(imagex-auto-adjust-mode 1))
 (eval-after-load 'org '(require 'ox-md nil t))
 (eval-after-load 'org '(require 'org-latex nil t))
 
